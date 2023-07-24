@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+</head>
+<body>
+    <h1>Aditya Singh</h1>
+
+    <hr />
+
+    <h2>Contact Details</h2>
+    
+    <p id="textToCopyEmail">Shrimaan.aditya@gmail.com</p>
+    <button onclick="copyEmail()">Copy Email</button> OR <a href="mailto:Shrimaan.aditya@gmail.com">Click Here</a>
+    
+    <p id="textToCopyPhone">+91 8676060958</p>
+    <button onclick="copyPhone()">Copy Phone</button> OR <a href="tel:+918676060958">Click Here</a>
+    <hr>
+    <h2>About</h2>
+    <p>B.E Computer Science Graduate from BTI Bangalore with good academic record and keen interest in the
+        field of Web development and Java Development. Have worked on project related to Web Development, MySQL and
+        Blockchain.</p>
+
+    <hr>
+
+    <h2>Skill</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>SQL Basic</li>
+        <li>Programming Languages : Java , Javascript, C</li>
+        <li>Data Structure and Algorithm</li>
+        <li>Tools : Unix, Git</li>
+        <li>WordPress</li>
+        <li>Cloud : AWS, Digital Occean</li>
+    </ul>
+
+    <hr>
+
+    <h2>Projects</h2>
+    <h3>Academic projects</h3>
+    <h4>1. Online voing system using blockchain</h4>
+    <p>Web Application: Using React.js and Blockchain(Solidity)</p>
+    <p>Software : IDE: VS, Node.js and npm, Ganache, Metamask and Chrome.</p>
+    <p>This project is a combines of Aadhar authentication and blockchain technology to create a secure and
+        transparent online voting system. It verifies voter identity through Aadhar, records votes on a tamperproof blockchain, and ensures privacy and efficiency while adhering to legal requirements.</p>
+
+    <h4>2. Online covid-19 testing management system</h4>
+    <p>Web Application : Using HTML,CSS, PHP & MySQL</p>
+    <p>Software : IDE: VS, MySQL, Xampp CP(Apache) and Chrome.</p>
+    <p>An online COVID-19 testing management system streamlines testing processes, including appointment
+        scheduling, result tracking, and data management. It ensures secure user authentication, integrates with
+        external systems, and provides notifications and analytics. Mobile-friendly and compliant with privacy
+        regulations, it enhances efficiency in testing and reporting.</p>
+
+    <h4>3. Multi-blogging frontend for website</h4>
+    <p>Web Frontend : Using HTML,CSS and Bootstrap</p>
+    <p>Software : IDE: VS and Google Chrome</p>
+    <p>A multi-blogging frontend for a website allows multiple authors to create, manage, and customize their
+        own blog posts. It includes features like user authentication, blog post management, user profiles,
+        comments, search functionality, responsive design, SEO optimization, performance optimization, and
+        analytics.</p>
+
+    <hr>
+
+    <h2>Education</h2>
+    <h3>BACHELOR OF COMPUTER SCIENCE AND ENGINEERING (2023)</h3>
+    <p><b>Bangalore Technological Institute, Bangaluru</b></p>
+    <p style="color: blue;"><b>CGPA 8.0</b></p>
+
+    <h3>SENIOR SECONDARY EDUCATION/PU/12<sup>th</sup> (2018)</h3>
+    <p><b>R.L.S.Y College, Bettiah</b></p>
+    <p style="color: blue;"><b>PERCENTAGE : 60</b></p>
+
+    <h3>SECONDARY EDUCATION/10TH (2016)</h3>
+    <p><b>Saraswati Vidya Mandir, Bettiah</b></p>
+    <p style="color: blue;"><b>CGPA 7.8</b></p>
+
+    <hr>
+
+    <h2>Certifications</h2>
+    <ul>
+        <li>Frontend Web Development Training from TCR Innovation</li>
+        <li>MySQL Basics from Great Learning</li>
+        <li>SQL Basics from HackerRank</li>
+        <li>Getting Started with Devops</li>
+    </ul>
+
+    <hr>
+
+    <h2>Thank You</h2>
+
+
+    <script>
+        function copyEmail() {
+          const emailToCopy = document.getElementById('textToCopyEmail').innerText;
+          copyToClipboard(emailToCopy, 'Email');
+        }
+    
+        function copyPhone() {
+          const phoneToCopy = document.getElementById('textToCopyPhone').innerText;
+          copyToClipboard(phoneToCopy, 'Phone');
+        }
+    
+        function copyToClipboard(text, label) {
+          const tempTextArea = document.createElement('textarea');
+          tempTextArea.value = text;
+          document.body.appendChild(tempTextArea);
+          tempTextArea.select();
+          tempTextArea.setSelectionRange(0, 99999); // For mobile devices
+          document.execCommand('copy');
+          document.body.removeChild(tempTextArea);
+          alert(label + ' copied to clipboard: ' + text);
+        }
+    </script>
+</body>
+</html>

@@ -2,18 +2,48 @@ body{
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url("../assets/img/back-img1.jpg");
     border: 3px solid;
 }
+
+img{
+    position: relative;
+    margin-bottom: 0;
+    padding: 0;
+} 
+hr{
+    margin: 0;
+}
+
 button{
     background-color: green;
     color: aliceblue;
 }
+
 a{
     color: aliceblue;
 }
+
 h1{
-    background-color: orange;
+    position: relative;
+    z-index: 1;
+    background-color:rgb(7, 26, 72);
     padding: 10px;
-    border: 2px solid rgb(159, 105, 3);
+    border: 2px solid rgb(45, 32, 8);
     border-radius: 3%;
     margin: 2px;
+    color: aliceblue;
 }
 
+
+h2{
+    position: relative;
+    margin: 4px;
+    background-color: rgb(7, 26, 72);
+    color: white;
+    padding: 10px;
+    border: 2px solid rgb(45, 32, 8)
+    
+}
+p,h3,h4{
+    position: relative;
+    border: 5px;
+    padding-left: 4PX;
+}

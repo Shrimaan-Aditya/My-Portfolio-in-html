@@ -13,12 +13,15 @@ hr{
 }
 
 button{
-    background-color: green;
+    background-color: rgb(6, 16, 103);
+    margin-left: 3px;
+    padding: 6px;
     color: aliceblue;
 }
 
 a{
     color: aliceblue;
+    text-decoration: none;
 }
 
 h1{

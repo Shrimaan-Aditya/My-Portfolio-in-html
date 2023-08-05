@@ -13,7 +13,7 @@ hr{
     margin: 0;
 }
 
-button{
+button,.button{
     background-color: rgb(6, 16, 103);
     margin-left: 3px;
     padding: 10px;
